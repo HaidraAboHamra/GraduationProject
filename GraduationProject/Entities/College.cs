@@ -8,10 +8,11 @@ namespace GraduationProject.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public int AcademicYear { get; set; }
-       
+        
         
         
         //Navigation
-        public List<Lecture> Lectures { get; set; }
+        public List<Student> Students { get; set; }
+        public List<Subject> Subjects { get; set; }
     }
 }

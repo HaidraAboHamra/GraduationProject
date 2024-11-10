@@ -11,8 +11,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddMudServices();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-builder.WebHost.UseUrls("http://0.0.0.0:2005");
-string myPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "wwwroot", "REMS.db");
+builder.WebHost.UseUrls("http://0.0.0.0:1812");
+
+string myPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "wwwroot", "Gra.db");
 
 builder.Services.AddDbContext<AppDbContext>(Option =>
     Option.UseSqlite($"Data Source={myPath}"));
